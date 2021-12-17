@@ -35,6 +35,7 @@ fun main() {
 /**
  * this search about an item in an array
  * and return its position of it's found and -1 if not
+ * time complexity: O(log(n))
  */
 fun binarySearch(arr: IntArray, sz: Int, key: Int): Int {
     var low = 0 //
