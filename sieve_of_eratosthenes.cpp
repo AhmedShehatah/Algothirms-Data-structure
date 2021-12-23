@@ -4,6 +4,7 @@
  * @brief this code checks if a given number is prime or not 
  * using sieve of eratothenes algorthim
  * for more info about eratothenes algorthim check: https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
+ * time complexity O(nLog(log(n))
  * @version 0.1
  * @date 2021-12-21
  * 
@@ -32,7 +33,7 @@ void sieve()
         if (isPrime[i])
         {
             // set all multiples of i to false
-            for (int j = 2 * i; j < N; j += i)
+            for (int j = 2 * i; j*j < N; j += i)
                 isPrime[j] = false;
         }
     }
