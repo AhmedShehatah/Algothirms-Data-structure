@@ -33,7 +33,7 @@ void sieve()
         if (isPrime[i])
         {
             // set all multiples of i to false
-            for (int j = 2 * i; j*j < N; j += i)
+            for (int j = i * i; j < N; j += i)
                 isPrime[j] = false;
         }
     }
